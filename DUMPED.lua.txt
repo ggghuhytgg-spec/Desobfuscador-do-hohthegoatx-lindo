@@ -1,0 +1,43 @@
+-- this file is generated using anarco deobsfucator v1
+local lar1 = game:GetService("Players")
+local lar2 = game:GetService("RunService")
+local lar3 = game:GetService("TweenService")
+local lar4 = game:GetService("UserInputService")
+local lar5 = game:GetService("Lighting")
+local lar6 = game:GetService("Workspace")
+local lar7 = game:GetService("ReplicatedStorage")
+local lar8 = game:GetService("StarterGui")
+local lar9 = game:GetService("SoundService")
+local lar10 = game:GetService("HttpService")
+local lar11 = lar1.LocalPlayer
+local lar12 = object:WaitForChild("Humanoid")
+lar8:SetCore("SendNotification", {
+Text = "Character carregado: Character",
+Duration = 3,
+Title = "Delta Base"
+})
+lar12.WalkSpeed = 18
+local lar13 = lar11.CharacterAdded:Connect(function(character)
+end)
+local lar14 = lar2.RenderStepped:Connect(function(deltaTime)
+local lar15 = object:FindFirstChild("HumanoidRootPart")
+Camera.FieldOfView = 70
+end)
+local lar16 = lar4.InputBegan:Connect(function(input, gameProcessed)
+end)
+task.delay(5, function()
+local lar17 = lar3:Create(lar5, TweenInfo.new(2, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {
+Brightness = 3
+})
+lar17:Play()
+end)
+local lar18 = Instance.new("Sound")
+lar18.SoundId = "rbxassetid://9118823102"
+lar18.Volume = 0.5
+lar18.Parent = lar9
+print("Session GUID:", "00000000-0000-0000-0000-000000000000")
+lar8:SetCore("SendNotification", {
+Text = "Delta base carregado com sucesso.",
+Duration = 3,
+Title = "Delta Base"
+})
